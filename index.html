@@ -14,13 +14,13 @@
       <nav>
         <ul class="header__menu-nav">
           <li>
-            <a class="menu_item" href="#0">главная</a>
+            <a class="menu_item" href="#main">главная</a>
           </li>
           <li class="list-marker">
-            <a class="menu_item item-active" href="#0">посмотреть лоты</a>
+            <a class="menu_item item-active" href="#lots">посмотреть лоты</a>
           </li>
           <li class="list-marker">
-            <a class="menu_item item-active" href="#0">об аукционе</a>
+            <a class="menu_item item-active" href="#about">об аукционе</a>
           </li>
         </ul>
       </nav>
@@ -42,17 +42,15 @@
       </ul>
     </header>
     <main>
-      <section class="cover content-section">
+      <section class="cover content-section" id="main">
         <h1 class="cover__title">
-          <span class="accent-span">он<span class="space-letter">о</span></span>
-          <span class="accent-span text-center"
-            >теб<span class="space-letter">е</span></span
-          >
-          <span class="accent-span text-right"
-            ><span class="space-letter">н</span>ад<span class="no-space-letter"
-              >о</span
-            ></span
-          >
+          <span class="accent-span">он<span class="space-letter">о</span>
+          </span>
+          <span class="accent-span text-center">теб<span class="space-letter">е</span>
+        </span>
+          <span class="accent-span text-right">
+            <span class="space-letter">н</span>ад<span class="no-space-letter">о</span>
+          </span>
         </h1>
         <span class="cover__about-text">
           аукцион вещей, в которые никто не
@@ -60,7 +58,7 @@
         </span>
         <button class="cover__about-button">Сделать ставку</button>
       </section>
-      <section class="lots content-section">
+      <section class="lots content-section" id="lots">
         <h2 class="lots__intro">лоты</h2>
         <ul class="lots__list">
           <li>
@@ -70,7 +68,7 @@
               </h3>
               <p class="lots__list-paragraph">
                 Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
-                ставка, если бы вы не знали, что режиссёр —<span class = "litle-space">Пол Томас Андерсон?</span>
+                ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
               </p>
             </article>
           </li>
@@ -105,7 +103,7 @@
         </ul>
         <a class="lots__see-more" href="#0">посмотреть больше</a>
       </section>
-      <section class="about content-section">
+      <section class="about content-section" id="about">
         <div class="about__logo">
           <img
             class="about__logo-image"
@@ -114,7 +112,7 @@
           />
           <img
             class="about__logo-background"
-            src="/images/Ellipse 10.svg"
+            src="/images/Ellipse_10.svg"
             alt="Фон логотипа"
           />
         </div>
@@ -153,24 +151,29 @@
       <nav>
         <ul class="footer__menu-nav">
           <li>
-            <a class="menu_item" href="#0">главная</a>
+            <a class="menu_item" href="#main">главная</a>
           </li>
           <li>
-            <a class="menu_item item-active" href="#0">посмотреть лоты</a>
+            <a class="menu_item item-active" href="#lots">посмотреть лоты</a>
           </li>
           <li>
-            <a class="menu_item item-active" href="#0">об аукционе</a>
+            <a class="menu_item item-active" href="#about">об аукционе</a>
           </li>
         </ul>
       </nav>
       <div class="footer__services">
-        <img class="footer__image" src="/images/yt.svg" alt="Ютуб" />
-        <img class="footer__image" src="/images/vk.svg" alt="Вконтакте" />
-        <img
-          class="footer__image"
-          src="/images/pinterest.svg"
-          alt="Пинтерест"
-        />
+        <a href="https://youtube.com/">
+          <img class="footer__image" src="/images/yt.svg" alt="Ютуб" />
+        </a>
+        <a href="https://vk.com/"
+          ><img class="footer__image" src="/images/vk.svg" alt="Вконтакте"/>
+        </a>
+        <a href="https://ru.pinterest.com/">
+          <img
+            class="footer__image"
+            src="/images/pinterest.svg"
+            alt="Пинтерест"/>
+          </a>
       </div>
     </footer>
   </body>
