@@ -173,7 +173,8 @@
 
 .lots__list {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  gap:20px;
 }
 
 .lots__element {
