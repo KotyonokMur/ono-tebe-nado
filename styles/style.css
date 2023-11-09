@@ -291,10 +291,6 @@
   margin-right: 10px;
 }
 
-.footer__info{
-  width: 250px;
-}
-
 .footer__services {
   display: flex;
   flex-direction: row;
