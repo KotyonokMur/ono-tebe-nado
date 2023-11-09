@@ -1,5 +1,5 @@
 .content-section {
-  width: 1440px;
+  max-width: 1440px;
   box-sizing: border-box;
   margin: auto;
 }
@@ -9,13 +9,16 @@
   display: flex;
   align-items: center;
   margin: auto;
+  justify-content: space-between;
 }
 
 .header__logo {
   width: 136px;
-  height: 105px;
-  margin-left: 214px;
-  margin-right: 363px;
+  margin-right: 145px;
+}
+
+.header__info{
+  width: 240px;
 }
 
 .header__menu-nav {
@@ -25,7 +28,7 @@
   gap: 32px;
 }
 
-.menu_item {
+.menu-item {
   font-size: 18px;
   font-weight: 400;
   text-decoration: none;
@@ -41,14 +44,20 @@
 }
 
 .info {
-  width: 240px;
   font-style: normal;
   flex-direction: column;
   line-height: 155%;
 }
 
+.address{
+  max-width: 240px;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
 .cover {
-  height: 757px;
+  min-height: 757px;
   position: relative;
   background-image: url(/images/cover.jpg);
   background-size: cover;
@@ -68,7 +77,6 @@
   position: absolute;
   padding: 165px 50px 237px 50px;
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -76,7 +84,6 @@
 }
 
 .accent-span {
-  height: 100px;
   color: white;
   font-size: 100px;
   font-weight: 700;
@@ -86,8 +93,7 @@
 
 .text-center {
   text-align: center;
-  margin-top: 28px;
-  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .text-right {
@@ -131,6 +137,7 @@
   border: #fff;
   background: transparent;
   border: 1px solid #fff;
+  cursor: pointer;
   bottom: 50px;
   right: 50px;
 }
@@ -166,13 +173,15 @@
 
 .lots__list {
   display: flex;
-  gap: 25px;
+  justify-content: space-between;
 }
 
 .lots__element {
   width: 430px;
   height: 450px;
   position: relative;
+  background-size: cover;
+  background-position: center;
 }
 
 .lots__element::before {
@@ -209,20 +218,14 @@
 
 .lots__element-first {
   background-image: url(/images/card-lot-01.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .lots__element-second {
   background-image: url(/images/card-lot-02.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .lots__element-third {
   background-image: url(/images/card-lot-03.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .about {
@@ -255,8 +258,7 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
-  height: 388px;
-  width: 885px;
+  max-width: 885px;
   margin-top: 103px;
 }
 
@@ -277,7 +279,7 @@
 .footer {
   padding: 0px 50px 90px 50px;
   display: flex;
-  gap: 355px;
+  justify-content: space-between;
 }
 
 .footer__menu-nav {
@@ -285,6 +287,11 @@
   flex-direction: column;
   align-items: center;
   margin-top: 0px;
+  margin-right: 10px;
+}
+
+.footer__info{
+  width: 250px;
 }
 
 .footer__services {
